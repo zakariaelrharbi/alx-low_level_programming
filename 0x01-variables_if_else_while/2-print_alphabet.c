@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
@@ -9,6 +7,11 @@
  */
 int main(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
+	char x = 'a';
+		while (x <= 'z')
+		{
+			putchar(x);
+			x++;
+		}
 	return (0);
 }
