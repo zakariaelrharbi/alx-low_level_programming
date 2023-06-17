@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<unistd.h>
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
