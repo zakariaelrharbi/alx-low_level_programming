@@ -19,13 +19,13 @@ int main(void)
 			putchar(a);
 			putchar(b);
 			b++;
+			if (a != '8')
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		if (a != '8')
-		{
-			putchar(',');
-			putchar(' ');
 		a++;
-		}
 	}
 	return (0);
 }
