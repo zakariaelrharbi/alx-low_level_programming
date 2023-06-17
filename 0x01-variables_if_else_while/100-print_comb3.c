@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<unistd.h>
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
@@ -7,18 +8,23 @@
  */
 int main(void)
 {
-	int x = '0';
+	int a;
+	int b;
 
-	while (x <= '9')
+	a = '0';
+	while (a <= '8')
 	{
-		putchar(x);
-		if (x != '9')
+		b = a + 1;
+		while (b <= '9')
+		{
+			putchar(a);
+			putchar(b);
+			b++;
+		}
+		if (a != '8')
 		{
 			putchar(',');
 			putchar(' ');
-		}
-		x++;
+		a++;
 	}
-	putchar('\n');
-	return (0);
 }
