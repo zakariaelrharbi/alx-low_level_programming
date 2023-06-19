@@ -9,31 +9,26 @@ int main(void)
 {
 	int a;
 	int b;
-	int c;
 
-	a = '0';
-	while (a <= '7')
+	a = 0;
+	while (a <= 98)
 	{
 		b = a + 1;
-		while (b <= '8')
+		while (b <= 99)
 		{
-			c = b + 1;
-			while (c <= '9')
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
+			putchar(' ');
+			putchar((b / 10) + '0');
+			putchar((b / 10) + '0');
+			if (a < 98)
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
-				if (a != '7')
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				c++;
+				putchar(',');
+				putchar(' ');
 			}
 			b++;
 		}
 		a++;
 	}
-	putchar('\n');
 	return (0);
 }
