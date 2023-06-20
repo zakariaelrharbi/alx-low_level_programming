@@ -7,13 +7,4 @@
 void print_alphabet_x10(void)
 {
 	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
 }
