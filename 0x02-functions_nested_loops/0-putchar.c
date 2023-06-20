@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include<main.h>
+#include "main.h"
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
@@ -8,6 +7,6 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	write(1, "_putchar\n", 8);
 	return (0);
 }
