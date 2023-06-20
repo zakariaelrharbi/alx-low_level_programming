@@ -6,5 +6,12 @@
  */
 void print_alphabet_x10(void)
 {
+	int a;
+
+	a = 0;
+	while (a <= 9)
+	{
 	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+	a++;
+	}
 }
