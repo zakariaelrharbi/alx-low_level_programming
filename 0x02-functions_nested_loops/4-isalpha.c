@@ -5,7 +5,7 @@
  *@c: the number we want to check
  * Return: void
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
