@@ -6,5 +6,5 @@
  */
 void print_alphabet(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 28);
+	write(1, "abcdefghijklmnopqrstuvwxyz", 27);
 }
