@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * int _islower - function that checks if c lowercase
