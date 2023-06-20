@@ -6,8 +6,6 @@
  */
 void int _islower(int c)
 {
-	int c;
-
 	if (c >= '65' c <= '90')
 	{
 		return (0);
