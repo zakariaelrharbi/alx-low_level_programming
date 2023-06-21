@@ -3,8 +3,8 @@
 /**
  *print_sign - function that checks prints the sign of a number.
  *@n: the number we want to check
- * Return: void
- */
+ * Return: 0,1, or -1.
+ **/
 int print_sign(int n)
 {
 	if (n > 0)
