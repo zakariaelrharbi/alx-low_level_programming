@@ -11,8 +11,8 @@ void jack_bauer(void)
 	a = 0;
 	while (a < 24)
 	{
-		b = a + 1;
-		while (b < 60)
+		b = a;
+		while (b <= 60)
 		{
 			_putchar(a / 10 + '0');
 			_putchar(a % 10 + '0');
