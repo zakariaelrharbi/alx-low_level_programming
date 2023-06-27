@@ -1,6 +1,9 @@
+#include "main.h"
+#include <stdio.h>
+
 /**
   * print_array - prints n elements of an array
-  * @b: the array
+  * @a: the array
   * @n: the number of element to print
   *
   * Return: void
@@ -8,15 +11,15 @@
 
 void print_array(int *a, int n)
 {
-	int b = 0;
+	int i = 0;
 
-	while (b < n)
+	while (i < n)
 	{
-		printf("%d", *(a + b));
+		printf("%d", *(a + i));
 
-		if (b != (n - 1))
+		if (i != (n - 1))
 			printf(", ");
-		b++;
+		i++;
 	}
 	printf("\n");
 }
