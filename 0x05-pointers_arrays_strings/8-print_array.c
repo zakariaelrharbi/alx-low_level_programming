@@ -1,6 +1,6 @@
 /**
   * print_array - prints n elements of an array
-  * @a: the array
+  * @b: the array
   * @n: the number of element to print
   *
   * Return: void
