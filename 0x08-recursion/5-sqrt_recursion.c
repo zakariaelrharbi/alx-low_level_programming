@@ -1,9 +1,7 @@
 #include "main.h"
 /**
- * _sqrt_recursion- Calculates the natural square root of a number.
- * square_root - function that call .
+ * _sqrt_recursion - function that returns the natural square root of a number.
  * @n: The number to calculate the natural square root of
- *
  * Return: The natural square root of the given number,
  * or -1 does not have a natural square root
  */
@@ -11,6 +9,13 @@ int _sqrt_recursion(int n)
 {
 	return (square_root(n, 1));
 }
+/**
+ *  square_root - second function.
+ * @n: The number to calculate the natural square root of.
+ * @i: the variable.
+ * Return: The natural square root of the given number,
+ * or -1 does not have a natural square root
+ */
 int square_root(int n, int i)
 {
 	if (n < 0)
