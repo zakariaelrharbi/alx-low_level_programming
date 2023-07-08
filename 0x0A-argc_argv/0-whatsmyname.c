@@ -1,7 +1,12 @@
 #include "main.h"
 #include <stdio.h>
-
-int main (int argc, char *argv[])
+/**
+ * main -  is the entry point of the program.
+ *@argc:The number of arguments
+ *@argv:An array of pointers to the arguments
+ * Return: Always 0.
+ */
+int main(int argc, char *argv[])
 {
 	int i;
 
@@ -9,5 +14,5 @@ int main (int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
-	return (0);	
+	return (0);
 }
