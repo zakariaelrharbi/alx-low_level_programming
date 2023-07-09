@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int x;
 	int y;
 	int z;
-	
+
 	if (argc != 3)
 	{
 		printf("Error\n");
