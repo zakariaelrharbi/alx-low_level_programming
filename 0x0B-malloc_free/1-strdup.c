@@ -1,11 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
- /**
- *_strdup - function that returns a pointer.
- *@size: the size of the array
- *@c:the character.
- * Return: NULL if size is 0.
+/**
+ * _strdup - Duplicates a string.
+ *
+ * @str: The string to be duplicated.
+ *
+ * Return: Pointer to the duplicated string, or NULL if it fails.
+ *
+ * This function creates a duplicate of the string 'str'. It begins by
+ * checking if 'str' is NULL. If it is, the function returns NULL.
+ *
  */
 char *_strdup(char *str)
 {
