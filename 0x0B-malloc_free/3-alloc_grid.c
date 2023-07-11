@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * alloc_grid - Allocates a two-dimensional array of integers.
- * @width: The width of the 2D array.
- * @height: The height of the 2D array.
- * Return: Pointer to the newly allocated memory, or NULL if it fails.
- */
+/*
+* Function to allocate memory for a 2D grid of integers
+* @width: width of the grid
+* @height: height of the grid
+* Return: pointer to the newly allocated grid or
+* NULL if width or height is <= 0
+*/
 int **alloc_grid(int width, int height)
 {
 	int **ptr, i, j;
