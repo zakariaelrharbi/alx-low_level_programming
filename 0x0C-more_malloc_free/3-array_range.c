@@ -9,8 +9,8 @@
  * @max: The maximum value for the range of numbers in the array.
  *
  * This function generates an array of integers, starting from
- * min and going up to max. It dynamically allocates memory for 
- * the array. If min > max, or if memory allocation fails, it 
+ * min and going up to max. It dynamically allocates memory for
+ * the array. If min > max, or if memory allocation fails, it
  * returns NULL.
  *
  * Return: A pointer to the newly created array, or NULL if it fails.
