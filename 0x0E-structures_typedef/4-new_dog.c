@@ -1,40 +1,63 @@
 #include "dog.h"
 /**
- * _strdup - Duplicates a string.
- *
- * @str: The string to be duplicated.
- *
- * Return: Pointer to the duplicated string, or NULL if it fails.
- *
- * This function creates a duplicate of the string 'str'. It begins by
- * checking if 'str' is NULL. If it is, the function returns NULL.
- *
+ * _strlen - returns the length of a given string
+ * @s: the string
+ * Return: the length of given string
  */
-char *_strdup(char *str)
+
+int _strlen(char *s)
 {
 	int i;
-	int size;
-	char *ptr;
+
+	i = 0;
+	while (s[i])
+	{
+		i++;
+		}
+	return (i);
+}
+
+/**
+ * _create_array - creates an array of chars.
+ * @size: the size of the memory to allocate.
+ * Return: the array created.
+ */
+
+char *_create_array(unsigned int size)
+{
+	char *array;
+
+	if (size == 0)
+		return (NULL);
+	array = malloc(sizeof(char) * size);
+	if (!array)
+		return (NULL);
+	return (array);
+}
+
+/**
+ * _strdup - duplicates a given string.
+ * @str: the string to duplicate.
+ * Return: the array created.
+ */
+
+char *_strdup(char *str)
+{
+	char *new_str;
+	int i;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	size = 0;
-	while (str[size])
-	{
-		size++;
-	}
-	ptr = malloc(sizeof(char) * size + 1);
-	if (ptr == NULL)
-	{
+	i = 0;
+	new_str = _create_array(_strlen(str) + 1);
+	if (!new_str)
 		return (NULL);
-	}
-	for (i = 0; i < size; i++)
+	while (i <= _strlen(str))
 	{
-		ptr[i] = str[i];
+		new_str[i] = str[i];
+		i++;
 	}
-	return (ptr);
+	return (new_str);
 }
 /**
  * new_dog - structure with given parameters.
