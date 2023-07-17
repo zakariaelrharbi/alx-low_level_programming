@@ -1,5 +1,7 @@
 #ifndef MYFILE_H
 #define MYFILE_H
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * struct dog - has 3 elements.
  * @name: 1st element.

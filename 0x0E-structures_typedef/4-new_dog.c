@@ -1,6 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
+/**
+ * _strdup - Duplicates a string.
+ *
+ * @str: The string to be duplicated.
+ *
+ * Return: Pointer to the duplicated string, or NULL if it fails.
+ *
+ * This function creates a duplicate of the string 'str'. It begins by
+ * checking if 'str' is NULL. If it is, the function returns NULL.
+ *
+ */
 char *_strdup(char *str)
 {
 	int i;
@@ -29,14 +38,18 @@ char *_strdup(char *str)
 }
 /**
  * new_dog - structure with given parameters.
- * @d: Pointer to the 'dogt' structure to be initialized.
  * @name: Pointer to a character string indicating the name of the dog.
  * @age: Floating point value representing the age of the dog.
  * @owner: a character string indicating the name of the dog's owner.
+ * Return: d
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d = malloc(sizeof(dog_t));
+	dog_t *d;
+
+	d = malloc(sizeof(dog_t));
+	if (d == NULL)
+		return (NULL);
 	d->name = _strdup(name);
 	d->owner = _strdup(owner);
 	d->age = age;
